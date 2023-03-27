@@ -1,0 +1,9 @@
+include includes/head
+body
+  h1 What's up mate #{name}
+  ul
+    each cat in cats
+      li
+        img(src="images/" + cat.image, alt="")
+
+  include includes/foot
